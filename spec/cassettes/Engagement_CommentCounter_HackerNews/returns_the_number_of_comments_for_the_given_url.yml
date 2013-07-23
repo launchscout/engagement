@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.thriftdb.com/api.hnsearch.com/items/_search?q=http://www.90percentofeverything.com/2013/07/23/the-slippery-slope/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Application:
+      - thriftdbweb
+      Application-Tag:
+      - master
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Tue, 23 Jul 2013 23:04:06 GMT
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '574'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"hits": 1, "facet_results": {"fields": {}, "queries": {}}, "warnings":
+        [], "request": {"facet": {"fields": {}, "queries": []}, "stats": {}, "match_stopwords":
+        false, "q": "http://www.90percentofeverything.com/2013/07/23/the-slippery-slope/",
+        "start": 0, "limit": 10, "sortby": "score desc", "highlight": {"include_matches":
+        false, "fragments": {"maxchars": 100, "include": false, "markup_text": false},
+        "markup_items": false}, "weights": {"username": 1.0, "parent_sigid": 1.0,
+        "domain": 1.0, "title": 1.0, "url": 1.0, "text": 1.0, "discussion.sigid":
+        1.0, "type": 1.0}, "filter": {"fields": {}, "queries": []}, "boosts": {"fields":
+        {}, "functions": {}, "filters": {}}}, "results": [{"item": {"username": "justinph",
+        "parent_sigid": null, "domain": "90percentofeverything.com", "title": "The
+        slippery slope", "url": "http://www.90percentofeverything.com/2013/07/23/the-slippery-slope/",
+        "text": null, "discussion": null, "id": 6092752, "parent_id": null, "points":
+        75, "create_ts": "2013-07-23T20:41:50Z", "num_comments": 18, "cache_ts": "2013-07-23T22:52:40Z",
+        "_id": "6092752-c13d2", "type": "submission", "_noindex": false, "_update_ts":
+        1374619987146873}, "score": 2.1764941}], "time": 0.039254188537597656}'
+    http_version: 
+  recorded_at: Tue, 23 Jul 2013 23:04:04 GMT
+recorded_with: VCR 2.5.0
