@@ -1,5 +1,5 @@
 require 'engagement'
-
+require 'debugger'
 require 'vcr'
 
 VCR.configure do |c|
