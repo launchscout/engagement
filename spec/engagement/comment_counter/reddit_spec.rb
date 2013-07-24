@@ -15,4 +15,9 @@ describe Engagement::CommentCounter::Reddit do
     it { should == 8 }
   end
 
+  context 'with no results', :vcr do
+    let(:url) { 'http://blog.gaslight.co/blog/why-i-chose-angularjs' }
+    it { should == 0 }
+  end
+
 end

@@ -21,6 +21,8 @@ class Engagement::CommentCounter::Reddit
   private
 
   def extract_count_from(response)
+    return 0 unless response && response['data']
+
     children = response['data']['children']
     children.inject(0) { |count, entry|
       data = entry['data']
