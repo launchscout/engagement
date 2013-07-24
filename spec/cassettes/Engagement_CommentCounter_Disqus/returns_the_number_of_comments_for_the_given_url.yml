@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://disqus.com/api/get_thread_by_url/?forum_api_key=<FILTERED>&url=http://diminishing.org/searching-for-a-hero-ruby
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      P3p:
+      - CP="DSP IDC CUR ADM DELi STP NAV COM UNI INT PHY DEM"
+      Vary:
+      - Accept-Encoding, X-Forwarded-Proto
+      Content-Length:
+      - '299'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 24 Jul 2013 13:48:58 GMT
+      X-Varnish:
+      - '118709720'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":{"allow_comments":true,"forum":"79677","title":"Searching
+        fora HeroGood Examples","url":"http://diminishing.org/searching-for-a-hero-ruby","num_comments":4,"created_at":"2013-01-27T15:37:02","forum_obj":{"created_at":"2009-01-24
+        21:36:26.853147","shortname":"diminishing","id":"79677","name":"diminishing
+        blog"},"slug":"httpdiminishingorgsearching_for_a_hero_ruby","hidden":false,"identifier":null,"id":"1049620432"},"code":"ok","succeeded":true}'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 13:48:58 GMT
+- request:
+    method: get
+    uri: http://disqus.com/api/get_num_posts/?forum_api_key=<FILTERED>&thread_ids=1049620432
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 24 Jul 2013 13:48:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      P3p:
+      - CP="DSP IDC CUR ADM DELi STP NAV COM UNI INT PHY DEM"
+    body:
+      encoding: UTF-8
+      string: '{"message":{"1049620432":[5,4]},"code":"ok","succeeded":true}'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 13:48:58 GMT
+recorded_with: VCR 2.5.0
