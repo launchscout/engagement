@@ -7,12 +7,24 @@ class Engagement::CommentCounter::Reddit
 
   def comments_count(url)
     response = @client.search(url).parsed_response
-    data = response['data']
-    children = data['children']
-    children.inject(0) {
-      |count, entry|
+
+    # Sometimes the Reddit API returns an Array, sometimes it returns a Hash.
+    unless response.is_a?(Array)
+      response = [response]
+    end
+
+    response.inject(0) do |count, listing|
+      count + extract_count_from(listing)
+    end
+  end
+
+  private
+
+  def extract_count_from(response)
+    children = response['data']['children']
+    children.inject(0) { |count, entry|
       data = entry['data']
-      count + data['num_comments']
+      count + (data['num_comments'] || 0)
     }
   end
 end
