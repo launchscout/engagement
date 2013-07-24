@@ -1,0 +1,204 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/search.json?q=http://gaslight.co/blog/why-we-wrote-a-blog
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Location:
+      - http://www.reddit.com/submit.json?url=http%3A%2F%2Fgaslight.co%2Fblog%2Fwhy-we-wrote-a-blog
+      Content-Length:
+      - '0'
+      Server:
+      - '''; DROP TABLE servertypes; --'
+      Date:
+      - Wed, 24 Jul 2013 15:01:23 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 15:01:23 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/submit.json?url=http://gaslight.co/blog/why-we-wrote-a-blog
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Location:
+      - http://www.reddit.com/r/rubyonrails/comments/1it9vk/we_moved_our_blog_from_tumblr_to_our_own_rails/.json?already_submitted=true
+      Content-Length:
+      - '0'
+      Server:
+      - '''; DROP TABLE servertypes; --'
+      Date:
+      - Wed, 24 Jul 2013 15:01:24 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 15:01:24 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/r/rubyonrails/comments/1it9vk/we_moved_our_blog_from_tumblr_to_our_own_rails/.json?already_submitted=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Wed, 24 Jul 2013 13:04:43 GMT
+      Server:
+      - '''; DROP TABLE servertypes; --'
+      Vary:
+      - accept-encoding
+      Cache-Control:
+      - private, must-revalidate, max-age=0
+      Date:
+      - Wed, 24 Jul 2013 15:01:24 GMT
+      Content-Length:
+      - '8295'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"kind": "Listing", "data": {"modhash": "", "children": [{"kind":
+        "t3", "data": {"domain": "gaslight.co", "banned_by": null, "media_embed":
+        {}, "subreddit": "rubyonrails", "selftext_html": null, "selftext": "", "likes":
+        null, "link_flair_text": null, "id": "1it9vk", "clicked": false, "title":
+        "We moved our blog from Tumblr to our own Rails app. Here''s why.", "media":
+        null, "score": 9, "approved_by": null, "over_18": false, "hidden": false,
+        "thumbnail": "", "subreddit_id": "t5_2qi04", "edited": false, "link_flair_css_class":
+        null, "author_flair_css_class": null, "downs": 6, "saved": false, "is_self":
+        false, "permalink": "/r/rubyonrails/comments/1it9vk/we_moved_our_blog_from_tumblr_to_our_own_rails/",
+        "name": "t3_1it9vk", "created": 1374531646.0, "url": "http://gaslight.co/blog/why-we-wrote-a-blog",
+        "author_flair_text": null, "author": "cdmwebs", "created_utc": 1374502846.0,
+        "ups": 15, "num_comments": 8, "num_reports": null, "distinguished": null}}],
+        "after": null, "before": null}}, {"kind": "Listing", "data": {"modhash": "",
+        "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qi04", "banned_by":
+        null, "subreddit": "rubyonrails", "likes": null, "replies": "", "id": "cb7u0by",
+        "gilded": 0, "author": "dougalcorn", "parent_id": "t3_1it9vk", "approved_by":
+        null, "body": "\"Just give up and use Rails\"", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;&amp;quot;Just
+        give up and use Rails&amp;quot;&lt;/p&gt;\n&lt;/div&gt;", "link_id": "t3_1it9vk",
+        "score_hidden": false, "name": "t1_cb7u0by", "created": 1374534853.0, "author_flair_text":
+        null, "created_utc": 1374506053.0, "ups": 2, "num_reports": null, "distinguished":
+        null}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qi04", "banned_by": null,
+        "subreddit": "rubyonrails", "likes": null, "replies": {"kind": "Listing",
+        "data": {"modhash": "", "children": [{"kind": "t1", "data": {"subreddit_id":
+        "t5_2qi04", "banned_by": null, "subreddit": "rubyonrails", "likes": null,
+        "replies": {"kind": "Listing", "data": {"modhash": "", "children": [{"kind":
+        "t1", "data": {"subreddit_id": "t5_2qi04", "banned_by": null, "subreddit":
+        "rubyonrails", "likes": null, "replies": {"kind": "Listing", "data": {"modhash":
+        "", "children": [{"kind": "t1", "data": {"subreddit_id": "t5_2qi04", "banned_by":
+        null, "subreddit": "rubyonrails", "likes": null, "replies": {"kind": "Listing",
+        "data": {"modhash": "", "children": [{"kind": "t1", "data": {"subreddit_id":
+        "t5_2qi04", "banned_by": null, "subreddit": "rubyonrails", "likes": null,
+        "replies": "", "id": "cb8w9gi", "gilded": 0, "author": "SENOR_BLAZE", "parent_id":
+        "t1_cb8i69z", "approved_by": null, "body": "If there''s an existing server,
+        sure. But if you''re running an instance dedicated to the blog it''s probably
+        not cost effective, amirite?\n\nPlease educate me on more economical alternatives
+        if I''m being ignorant.", "edited": false, "author_flair_css_class": null,
+        "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;If there&amp;#39;s
+        an existing server, sure. But if you&amp;#39;re running an instance dedicated
+        to the blog it&amp;#39;s probably not cost effective, amirite?&lt;/p&gt;\n\n&lt;p&gt;Please
+        educate me on more economical alternatives if I&amp;#39;m being ignorant.&lt;/p&gt;\n&lt;/div&gt;",
+        "link_id": "t3_1it9vk", "score_hidden": false, "name": "t1_cb8w9gi", "created":
+        1374652573.0, "author_flair_text": null, "created_utc": 1374623773.0, "ups":
+        1, "num_reports": null, "distinguished": null}}], "after": null, "before":
+        null}}, "id": "cb8i69z", "gilded": 0, "author": "NilsLandt", "parent_id":
+        "t1_cb8a5id", "approved_by": null, "body": "First of all, it''s their blog.
+        It probably doesn''t see much traffic at all.\n\nSecondly, it''s a blog. Blogs
+        are really easily cacheable, and Rails has excellent caching capabailities,
+        even without adding Varnish.", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;First of
+        all, it&amp;#39;s their blog. It probably doesn&amp;#39;t see much traffic
+        at all.&lt;/p&gt;\n\n&lt;p&gt;Secondly, it&amp;#39;s a blog. Blogs are really
+        easily cacheable, and Rails has excellent caching capabailities, even without
+        adding Varnish.&lt;/p&gt;\n&lt;/div&gt;", "link_id": "t3_1it9vk", "score_hidden":
+        false, "name": "t1_cb8i69z", "created": 1374615664.0, "author_flair_text":
+        null, "created_utc": 1374586864.0, "ups": 3, "num_reports": null, "distinguished":
+        null}}], "after": null, "before": null}}, "id": "cb8a5id", "gilded": 0, "author":
+        "SENOR_BLAZE", "parent_id": "t1_cb85ppa", "approved_by": null, "body": "It
+        could be considered overkill unless all the overhead is serving a purpose.",
+        "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;It could be considered overkill unless all
+        the overhead is serving a purpose.&lt;/p&gt;\n&lt;/div&gt;", "link_id": "t3_1it9vk",
+        "score_hidden": false, "name": "t1_cb8a5id", "created": 1374577562.0, "author_flair_text":
+        null, "created_utc": 1374548762.0, "ups": 1, "num_reports": null, "distinguished":
+        null}}, {"kind": "t1", "data": {"subreddit_id": "t5_2qi04", "banned_by": null,
+        "subreddit": "rubyonrails", "likes": null, "replies": {"kind": "Listing",
+        "data": {"modhash": "", "children": [{"kind": "t1", "data": {"subreddit_id":
+        "t5_2qi04", "banned_by": null, "subreddit": "rubyonrails", "likes": null,
+        "replies": "", "id": "cb983kb", "gilded": 0, "author": "cdmwebs", "parent_id":
+        "t1_cb95qhy", "approved_by": null, "body": "Did you read the post? Sure, there''s
+        static content on the page, but there''s also a lot of dynamic related content.
+        There''s a lot of moving parts on a blog that the static site generators don''t
+        help with.", "edited": false, "author_flair_css_class": null, "downs": 0,
+        "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Did you read the post? Sure,
+        there&amp;#39;s static content on the page, but there&amp;#39;s also a lot
+        of dynamic related content. There&amp;#39;s a lot of moving parts on a blog
+        that the static site generators don&amp;#39;t help with.&lt;/p&gt;\n&lt;/div&gt;",
+        "link_id": "t3_1it9vk", "score_hidden": false, "name": "t1_cb983kb", "created":
+        1374699883.0, "author_flair_text": null, "created_utc": 1374671083.0, "ups":
+        1, "num_reports": null, "distinguished": null}}], "after": null, "before":
+        null}}, "id": "cb95qhy", "gilded": 0, "author": "sleepyhead", "parent_id":
+        "t1_cb85ppa", "approved_by": null, "body": "It''s static content. Put it on
+        S3 or something. No reason to use a big stack like Rails just to show some
+        content.", "edited": false, "author_flair_css_class": null, "downs": 0, "body_html":
+        "&lt;div class=\"md\"&gt;&lt;p&gt;It&amp;#39;s static content. Put it on S3
+        or something. No reason to use a big stack like Rails just to show some content.&lt;/p&gt;\n&lt;/div&gt;",
+        "link_id": "t3_1it9vk", "score_hidden": false, "name": "t1_cb95qhy", "created":
+        1374685416.0, "author_flair_text": null, "created_utc": 1374656616.0, "ups":
+        1, "num_reports": null, "distinguished": null}}], "after": null, "before":
+        null}}, "id": "cb85ppa", "gilded": 0, "author": "cdmwebs", "parent_id": "t1_cb85kat",
+        "approved_by": null, "body": "Why do you say that?", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Why do you
+        say that?&lt;/p&gt;\n&lt;/div&gt;", "link_id": "t3_1it9vk", "score_hidden":
+        false, "name": "t1_cb85ppa", "created": 1374564917.0, "author_flair_text":
+        null, "created_utc": 1374536117.0, "ups": 1, "num_reports": null, "distinguished":
+        null}}], "after": null, "before": null}}, "id": "cb85kat", "gilded": 0, "author":
+        "sleepyhead", "parent_id": "t3_1it9vk", "approved_by": null, "body": "Sure,
+        moving from a third party blog platform like Tumblr is good. Moving static
+        content to Rails. Not so much.", "edited": false, "author_flair_css_class":
+        null, "downs": 0, "body_html": "&lt;div class=\"md\"&gt;&lt;p&gt;Sure, moving
+        from a third party blog platform like Tumblr is good. Moving static content
+        to Rails. Not so much.&lt;/p&gt;\n&lt;/div&gt;", "link_id": "t3_1it9vk", "score_hidden":
+        false, "name": "t1_cb85kat", "created": 1374564488.0, "author_flair_text":
+        null, "created_utc": 1374535688.0, "ups": 1, "num_reports": null, "distinguished":
+        null}}], "after": null, "before": null}}]'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 15:01:24 GMT
+recorded_with: VCR 2.5.0
