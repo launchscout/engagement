@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.reddit.com/search.json?q=http://blog.gaslight.co/blog/why-i-chose-angularjs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Location:
+      - http://www.reddit.com/submit.json?url=http%3A%2F%2Fblog.gaslight.co%2Fblog%2Fwhy-i-chose-angularjs
+      Server:
+      - '''; DROP TABLE servertypes; --'
+      Date:
+      - Wed, 24 Jul 2013 18:11:12 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 18:11:12 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/submit.json?url=http://blog.gaslight.co/blog/why-i-chose-angularjs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Location:
+      - http://www.reddit.com/login.json?dest=http%3A%2F%2Fwww.reddit.com%2Fsubmit.json%3Furl%3Dhttp%253A%252F%252Fblog.gaslight.co%252Fblog%252Fwhy-i-chose-angularjs
+      Content-Length:
+      - '238'
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Server:
+      - '''; DROP TABLE servertypes; --'
+      Date:
+      - Wed, 24 Jul 2013 18:11:12 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "302 Found\n\nThe resource was found at http://www.reddit.com/login.json?dest=http%3A%2F%2Fwww.reddit.com%2Fsubmit.json%3Furl%3Dhttp%253A%252F%252Fblog.gaslight.co%252Fblog%252Fwhy-i-chose-angularjs;
+        you should be redirected automatically.  "
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 18:11:12 GMT
+- request:
+    method: get
+    uri: http://www.reddit.com/login.json?dest=http://www.reddit.com/submit.json?url=http%253A%252F%252Fblog.gaslight.co%252Fblog%252Fwhy-i-chose-angularjs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 302
+      message: Moved Temporarily
+    headers:
+      Content-Length:
+      - '0'
+      Location:
+      - https://ssl.reddit.com/login.json?dest=http%3A%2F%2Fwww.reddit.com%2Fsubmit.json%3Furl%3Dhttp%253A%252F%252Fblog.gaslight.co%252Fblog%252Fwhy-i-chose-angularjs
+      Cache-Control:
+      - no-cache
+      Date:
+      - Wed, 24 Jul 2013 18:11:12 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 18:11:12 GMT
+- request:
+    method: get
+    uri: https://ssl.reddit.com/login.json?dest=http://www.reddit.com/submit.json?url=http%253A%252F%252Fblog.gaslight.co%252Fblog%252Fwhy-i-chose-angularjs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Snoo ruby reddit api wrapper v0.1.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Jul 2013 18:11:13 GMT
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4'
+      Server:
+      - '''; DROP TABLE servertypes; --'
+    body:
+      encoding: UTF-8
+      string: '"{}"'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2013 18:11:13 GMT
+recorded_with: VCR 2.5.0
