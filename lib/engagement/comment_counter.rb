@@ -3,6 +3,7 @@ module Engagement
 
     autoload :HackerNews, 'engagement/comment_counter/hacker_news'
     autoload :Reddit, 'engagement/comment_counter/reddit'
+    autoload :Disqus, 'engagement/comment_counter/disqus'
 
     def initialize(places)
       @places = places
