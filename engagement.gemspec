@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'debugger'
 
-  spec.add_dependency 'hacker_news_search'
+  spec.add_dependency 'hacker_news_search', '~> 0.0.6'
   spec.add_dependency 'snoo'
   spec.add_dependency 'disqus'
 end
