@@ -22,6 +22,13 @@ Or install it yourself as:
 counter = Engagement::CommentCounter.new([hacker_news, reddit])
 counter.comments_count('http://gaslight.co/blog/why-we-wrote-a-blog') # =>
 ```
+or to use the threaded version
+
+```ruby
+counter = Engagement::CommentCounter::Threaded.new([hacker_news, reddit])
+counter.comments_count('http://gaslight.co/blog/why-we-wrote-a-blog') # =>
+```
+
 
 ## Contributing
 
