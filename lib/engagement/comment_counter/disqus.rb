@@ -8,9 +8,15 @@ module Engagement
         @forum_api_key = forum_api_key
       end
 
+      # When we don't own the thread we currently return 0 to prevent an 
+      # exception from being raised. We're not sure that this is the best 
+      # long-term solution.
       def comments_count(url)
-        thread_id = thread_id_for(url)
-        comments_count_for_thread_id thread_id
+        if (thread_id = thread_id_for(url))
+          comments_count_for_thread_id thread_id
+        else
+          0
+        end
       end
 
       private
@@ -22,7 +28,7 @@ module Engagement
 
       def thread_id_for(url)
         thread = ::Disqus::Api.get_thread_by_url(forum_api_key: @forum_api_key, url: url)
-        thread['message']['id']
+        thread['message'] && thread['message']['id']
       end
 
     end
