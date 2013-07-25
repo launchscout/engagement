@@ -31,9 +31,9 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 24 Jul 2013 13:48:58 GMT
+      - Thu, 25 Jul 2013 14:14:47 GMT
       X-Varnish:
-      - '118709720'
+      - '1970018194'
       Age:
       - '0'
       Via:
@@ -47,7 +47,7 @@ http_interactions:
         21:36:26.853147","shortname":"diminishing","id":"79677","name":"diminishing
         blog"},"slug":"httpdiminishingorgsearching_for_a_hero_ruby","hidden":false,"identifier":null,"id":"1049620432"},"code":"ok","succeeded":true}'
     http_version: 
-  recorded_at: Wed, 24 Jul 2013 13:48:58 GMT
+  recorded_at: Thu, 25 Jul 2013 14:14:49 GMT
 - request:
     method: get
     uri: http://disqus.com/api/get_num_posts/?forum_api_key=<FILTERED>&thread_ids=1049620432
@@ -69,7 +69,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 24 Jul 2013 13:48:58 GMT
+      - Thu, 25 Jul 2013 14:14:47 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -85,5 +85,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"message":{"1049620432":[5,4]},"code":"ok","succeeded":true}'
     http_version: 
-  recorded_at: Wed, 24 Jul 2013 13:48:58 GMT
+  recorded_at: Thu, 25 Jul 2013 14:14:49 GMT
 recorded_with: VCR 2.5.0

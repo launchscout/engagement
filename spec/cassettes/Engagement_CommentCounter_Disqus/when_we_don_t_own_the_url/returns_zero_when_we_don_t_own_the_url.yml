@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://disqus.com/api/get_thread_by_url/?forum_api_key=<FILTERED>&url=http://google.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      P3p:
+      - CP="DSP IDC CUR ADM DELi STP NAV COM UNI INT PHY DEM"
+      Vary:
+      - Accept-Encoding, X-Forwarded-Proto
+      Content-Length:
+      - '63'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 25 Jul 2013 14:15:07 GMT
+      X-Varnish:
+      - '1970155121'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":null,"code":"ok","succeeded":true}'
+    http_version: 
+  recorded_at: Thu, 25 Jul 2013 14:15:09 GMT
+recorded_with: VCR 2.5.0
