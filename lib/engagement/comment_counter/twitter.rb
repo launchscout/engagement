@@ -6,10 +6,10 @@ module Engagement
 
       def initialize(credentials)
         ::Twitter.configure do |config|
-          config.consumer_key = credentials[:TWITTER_CONSUMER_KEY]
-          config.consumer_secret = credentials[:TWITTER_CONSUMER_SECRET]
-          config.oauth_token = credentials[:TWITTER_OAUTH_TOKEN]
-          config.oauth_token_secret = credentials[:TWITTER_OAUTH_TOKEN_SECRET]
+          config.consumer_key = credentials[:consumer_key]
+          config.consumer_secret = credentials[:consumer_secret]
+          config.oauth_token = credentials[:oauth_token]
+          config.oauth_token_secret = credentials[:oauth_token_secret]
         end
       end
 
