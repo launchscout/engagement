@@ -8,18 +8,18 @@ end
 
 def twitter_credentials
   {
-    TWITTER_CONSUMER_KEY: ENV['TWITTER_CONSUMER_KEY'],
-    TWITTER_CONSUMER_SECRET: ENV['TWITTER_CONSUMER_SECRET'],
-    TWITTER_OAUTH_TOKEN: ENV['TWITTER_OAUTH_TOKEN'],
-    TWITTER_OAUTH_TOKEN_SECRET: ENV['TWITTER_OAUTH_TOKEN_SECRET'],
+    consumer_key: ENV['TWITTER_CONSUMER_KEY'],
+    consumer_secret: ENV['TWITTER_CONSUMER_SECRET'],
+    oauth_token: ENV['TWITTER_OAUTH_TOKEN'],
+    oauth_token_secret: ENV['TWITTER_OAUTH_TOKEN_SECRET'],
   }
 end
 
 def twitter_credentials_present?
-  twitter_credentials[:TWITTER_CONSUMER_KEY] &&
-  twitter_credentials[:TWITTER_CONSUMER_SECRET] &&
-  twitter_credentials[:TWITTER_OAUTH_TOKEN] &&
-  twitter_credentials[:TWITTER_OAUTH_TOKEN_SECRET]
+  twitter_credentials[:consumer_key] &&
+  twitter_credentials[:consumer_secret] &&
+  twitter_credentials[:oauth_token] &&
+  twitter_credentials[:oauth_token_secret]
 end
 
 VCR.configure do |c|
