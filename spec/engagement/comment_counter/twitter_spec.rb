@@ -10,6 +10,6 @@ describe Engagement::CommentCounter::Twitter do
       counter.comments_count(url).should == 15
     end
   else
-    puts 'Skipping Twitter test, please set the TWITTER_CONSUMER_KEY,TWITTER_CONSUMER_SECRET,TWITTER_OAUTH_TOKEN,TWITTER_OAUTH_TOKEN_SECRET environment variables.'
+    puts 'Skipping Twitter test, please set the TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_OAUTH_TOKEN, TWITTER_OAUTH_TOKEN_SECRET environment variables.'
   end
 end
