@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Engagement::VERSION
   spec.authors       = ["Michael Guterl"]
   spec.email         = ["michael@diminishing.org"]
-  spec.description   = %q{A ruby gem for measuring the engagement of URLs on various social sites.}
-  spec.summary       = %q{Get comment counts from Reddit, HackerNews, and Disqus.}
+  spec.description   = %q{A ruby gem for measuring the engagement of URLs on various social sites. It wont find the love of your life, but it will show you who's talking about you!}
+  spec.summary       = %q{Get comment counts from Reddit, HackerNews, Disqus and Twitter.}
   spec.homepage      = "https://github.com/gaslight/engagement"
   spec.license       = "MIT"
 
