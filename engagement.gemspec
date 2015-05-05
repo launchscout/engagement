@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'snoo'
   spec.add_dependency 'disqus'
-  spec.add_dependency 'twitter', '~> 4.8.0'
+  spec.add_dependency 'twitter', '~> 5.14.0'
 end
