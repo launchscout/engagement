@@ -27,7 +27,7 @@ describe Engagement::CommentCounter do
 
     counter = Engagement::CommentCounter.new([counter_1, counter_2])
 
-    counter.comments_count(url).should == 3
+    expect(counter.comments_count(url)).to eq(3)
   end
 
 end

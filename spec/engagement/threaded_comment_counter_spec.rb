@@ -21,10 +21,10 @@ describe Engagement::CommentCounter::Threaded do
     counter = Engagement::CommentCounter::Threaded.new([timed_counter_1, timed_counter_2])
 
     time = Benchmark.realtime {
-      counter.comments_count('http://google.com').should == 3
+      expect(counter.comments_count('http://google.com')).to eq(3)
     }
 
-    time.should be_within(0.05).of(0.3)
+    expect(time).to be_within(0.05).of(0.3)
   end
 
 end
