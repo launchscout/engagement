@@ -27,7 +27,9 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.filter_sensitive_data('<FILTERED>') { disqus_forum_api_key }
-  c.filter_sensitive_data('<TWITTER_CONSUMER_KEY>') { twitter_credentials[:consumer_key] }
-  c.filter_sensitive_data('<TWITTER_OAUTH_TOKEN>') { twitter_credentials[:oauth_token] }
+  c.filter_sensitive_data('<TWITTER_OAUTH_STUFF>') { twitter_credentials[:consumer_key] }
+  c.filter_sensitive_data('<TWITTER_OAUTH_STUFF>') { twitter_credentials[:oauth_token] }
+  c.filter_sensitive_data('<TWITTER_OAUTH_STUFF>') { twitter_credentials[:consumer_secret] }
+  c.filter_sensitive_data('<TWITTER_OAUTH_STUFF>') { twitter_credentials[:oauth_token_secret] }
 end
 
